@@ -56,7 +56,7 @@ It typically contains multiple nested callback functions which in turn make the 
 
 -   modularization: break callbacks into independent functions
 -   use a control flow library, like async
--   use generators with Promises
+-   use generators with Promises (Promises wrap an asynchronous action in an object, which can be passed around and told to do certain things when the action finishes or fails.)
 -   use async/await
 
 ### Explain the concept of middleware in Node.js?
@@ -98,6 +98,10 @@ assert( result === 2, 'one multiplied by two is two');
 ### Explain the purpose of ExpressJS
 
 Express.js is a framework built on top of Node.js that facilitates the management of the flow of data between server and routes in the server-side applications.
+
+### Explain the process variable
+
+The process variable, just like the console variable, is available globally in Node. It provides various ways to inspect and manipulate the current program.
 
 ### Difference between process.nextTick() and setImmediate()?
 
