@@ -14,6 +14,23 @@ Node.js is a framework developed on Chrome’s V8 JavaScript engine that compile
 | Open Source  | has an extensive open source community, which has contributed with some modules, like http and url.           |
 | No Buffering | applications simply output the data in chunks and never buffer any data.                                      |
 
+### What is the scope?
+
+Scope determines the accessibility (visibility) of variables. The actual context of excecute.
+- Local scope
+- Global scope
+
+If there are a variable without var, let or const it's set by default as a global scope variable
+```
+var global = 'global scope';
+function localScope() {
+    var local = 'localScope';
+    globalScope = 'globalScopeByDefault';
+}
+console.log(globalScope);
+
+```
+
 ### How do Node.js works?
 
 It runs on a v8 environment. It works on a single-threaded event loop and a non-blocking I/O
