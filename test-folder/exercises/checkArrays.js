@@ -3,7 +3,7 @@ const arr2 = [1, 9, 3, 5];
 
 /*
  * Because of the nested for becomes n²
- * BigO (n²)
+ * BigO -> O(n²)
  */
 const bruteForce = (arr1, arr2) => {
     var response = true;
@@ -24,7 +24,7 @@ const bruteForce = (arr1, arr2) => {
 
 /*
  * Because of the sort, it becomes nlogn
- * BigO (nlogn)
+ * BigO -> O(nlogn)
  */
 const sortedList = (arr1, arr2) => {
     var sortedArr1 = arr1.sort();
@@ -34,7 +34,7 @@ const sortedList = (arr1, arr2) => {
     }
 };
 /*
- * BigO (n)
+ * BigO -> O(n)
  */
 const countThem = (arr1, arr2) => {
     const map1 = {};
