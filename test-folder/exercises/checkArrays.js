@@ -1,5 +1,5 @@
 const arr1 = [9, 7, 5, 3];
-const arr2 = [1, 9, 3, 5];
+const arr2 = [7, 9, 3, 5];
 
 /*
  * Because of the nested for becomes n²
@@ -27,10 +27,10 @@ const bruteForce = (arr1, arr2) => {
  * BigO -> O(nlogn)
  */
 const sortedList = (arr1, arr2) => {
-    var sortedArr1 = arr1.sort();
-    var sortedArr2 = arr2.sort();
-    for (let i = 0; i < sortedArr1.length; i++) {
-        return sortedArr1[i] === sortedArr2[i];
+    arr1.sort();
+    arr2.sort();
+    for (let i = 0; i < arr1.length; i++) {
+        return arr1[i] === arr2[i];
     }
 };
 /*
