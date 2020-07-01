@@ -34,6 +34,7 @@ const sortedList = (arr1, arr2) => {
     }
 };
 /*
+ * arr1 and arr2 are prevoiusly sorted, because sort method sort the origianl array
  * BigO -> O(n)
  */
 const countThem = (arr1, arr2) => {
