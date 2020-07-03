@@ -17,10 +17,12 @@ Node.js is a framework developed on Chrome’s V8 JavaScript engine that compile
 ### What is the scope?
 
 Scope determines the accessibility (visibility) of variables. The actual context of excecute.
-- Local scope
-- Global scope
+
+-   Local scope
+-   Global scope
 
 If there are a variable without var, let or const it's set by default as a global scope variable
+
 ```
 var global = 'global scope';
 function localScope() {
