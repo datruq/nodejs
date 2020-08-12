@@ -1,4 +1,4 @@
-function breakingBestAndWosrtRecords(scores) {
+function breakingBestAndWorstRecords(scores) {
     var highest = -1;
     var lowest = 1000000000;
     var highestCount = 0;
@@ -17,5 +17,5 @@ function breakingBestAndWosrtRecords(scores) {
     }
     return [highestCount - 1, lowestCount - 1];
 }
-const result = breakingBestAndWosrtRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]);
+const result = breakingBestAndWorstRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]);
 console.log(result);
