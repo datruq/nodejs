@@ -11,12 +11,10 @@ function kangaroo(x1, v1, x2, v2) {
     for (let i = x1; i < limit; i += v1) {
         map[i] = 1;
     }
-    console.table(map);
     const map2 = {};
     for (let i = x2; i < limit; i += v2) {
         map2[i] = 1;
     }
-    console.table(map2);
     for (let key in map) {
         for (let key2 in map2) {
             if (key === key2) {
