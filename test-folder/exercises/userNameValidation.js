@@ -1,14 +1,12 @@
 function CodelandUsernameValidation(str) {
-    debugger;
     var len = str.length;
-    var res = false;
-    if (len < 4 || len > 25) return res;
-    if (!/[a-z]/.test(str[0])) return res;
-    if (/[_]/.test(str[len - 1])) return res;
+    var isValid = false;
+    if (len < 4 || len > 25) return isValid;
+    if (!/[a-z]/.test(str[0])) return isValid;
+    if (/[_]/.test(str[len - 1])) return isValid;
     var arr = Array.from(str);
-    res = arr.every((x) => /[a-z_0-9]/.test(x));
-    // code goes here
-    return res;
+    isValid = arr.every((x) => /[a-z_0-9]/.test(x));
+    return isValid;
 }
 
 // keep this function call here
