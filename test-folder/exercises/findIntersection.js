@@ -1,3 +1,4 @@
+//Brute force O(n^2)
 function FindIntersection(strArr) {
     var res = [];
     var fisrtArr = strArr[0].split(', ');
@@ -13,7 +14,8 @@ function FindIntersection(strArr) {
     return res.length === 0 ? false : res.join(',');
   }
 
-  function FindIntersectionBest(strArr) {
+//O(n)
+function FindIntersectionBest(strArr) {
     var res = [];
     var map = {}
     var fisrtArr = strArr[0].split(', ');
