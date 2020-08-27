@@ -10,9 +10,9 @@ function divisibleSumPairs(n, k, ar) {
 }
 
 divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]);
-/*
 divisibleSumPairsBest(6, 3, [1, 3, 2, 6, 1, 2]);
 
+//Still incomplite
 function divisibleSumPairsBest(n, k, ar) {
     var arr = [];
     var count = 0;
@@ -26,4 +26,3 @@ function divisibleSumPairsBest(n, k, ar) {
     debugger;
     console.log(arr[0]);
 }
-*/
