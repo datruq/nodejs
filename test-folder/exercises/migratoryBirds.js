@@ -5,11 +5,12 @@ function migratoryBirds(arr) {
     for (let i of arr) {
         map[i] = (map[i] || 0) + 1;
     }
+    //debugger;
     for (let j in map) {
         if (map[j] > max) {
             if (max !== j)
                 maxMax.push(j);
-            max = j;
+            max = map[j];
         }
     }
     let max1 = maxMax[maxMax.length - 1];
@@ -18,4 +19,4 @@ function migratoryBirds(arr) {
 
 }
 
-console.log(migratoryBirds([1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4]))
+console.log(migratoryBirds([3, 1, 1, 2, 4, 1, 1, 2]));
