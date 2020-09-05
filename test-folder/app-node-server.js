@@ -8,9 +8,10 @@ const server = http.createServer((req, res) => {
     res.end('hellow calculator');
 });
 
-server.listen('4000');
+server.listen('3030');
 
 const suma = sum(2, 4);
+const resta = rest(2, 4);
 
 const multi = mult(2, 4);
 
