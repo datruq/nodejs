@@ -112,7 +112,7 @@ const arrayForEach = (arr) => {
  * Response
  * print all elements => 1 2 3
  */
-console.log(arrayForEach([1, 2, 3]));
+arrayForEach([1, 2, 3]);
 
 /*
  * ----------------------
@@ -194,6 +194,22 @@ const arrayPush = (arr, ele) => {
  * arr = [1, 2, 6, 7, 8]
  */
 console.log(arrayPush([1, 2, 6, 7], 8));
+
+/*
+ * ----------------------
+ * Reduce
+ * Subtract the numbers in the array, starting from the beginning:
+ * ----------------------
+ */
+const arrayReduce = (arr) => {
+    return arr.reduce((total, number) => total + number);
+};
+
+/*
+ * Response
+ * total = 16;
+ */
+console.log('Reduce method', arrayReduce([1, 2, 6, 7]));
 
 /*
  * ----------------------
