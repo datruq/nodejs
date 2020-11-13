@@ -18,5 +18,3 @@ function isLeapYearGregorian(year) {
 function isLeapYearJulian(year) {
     return year % 4 === 0;
 }
-
-console.log(dayOfProgrammer(2016));
