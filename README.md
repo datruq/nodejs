@@ -27,9 +27,9 @@ If there are a variable without var, let or const it's set by default as a globa
 var global = 'global scope';
 function localScope() {
     var local = 'localScope';
-    globalScope = 'globalScopeByDefault';
+    global = 'globalScopeByDefault';
 }
-console.log(globalScope);
+console.log(global);
 
 ```
 
@@ -183,4 +183,4 @@ Yes, Node.js does support cryptography through a module called Crypto.
 -   HttpOnly - this attribute is used to help prevent attacks such as cross-site scripting since it does not allow the cookie to be accessed via JavaScript.
 -   secure - this attribute tells the browser to only send the cookie if the request is being sent over HTTPS.
 
-Using Express, with express-cookie session.
+-   Using Express, with express-cookie session.
