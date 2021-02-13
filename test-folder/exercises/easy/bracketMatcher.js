@@ -6,7 +6,6 @@ function BracketMatcher(str) {
         if (/[()]/.test(par))
             reg.push(par);
     }
-    debugger;
     for (let par of reg) {
         if (par === '(') ++count;
         if (par === ')') --count;

@@ -34,7 +34,6 @@ const sortedList = (arr1, arr2) => {
     }
 };
 /*
- * arr1 and arr2 are prevoiusly sorted, because sort method, sort the origianl array
  * BigO -> O(n)
  */
 const countThem = (arr1, arr2) => {
@@ -56,8 +55,8 @@ console.log(
     `-----bruteForce---- Ìs arr1 and arr2 equals? ${bruteForce(arr1, arr2)}`
 );
 console.log(
-    `-----sortedList---- Ìs arr1 and arr2 equals? ${sortedList(arr1, arr2)}`
+    `-----countThem----- Ìs arr1 and arr2 equals? ${countThem(arr1, arr2)}`
 );
 console.log(
-    `-----countThem----- Ìs arr1 and arr2 equals? ${countThem(arr1, arr2)}`
+    `-----sortedList---- Ìs arr1 and arr2 equals? ${sortedList(arr1, arr2)}`
 );

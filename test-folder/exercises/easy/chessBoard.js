@@ -15,9 +15,6 @@ function chessBoard(w = 4, h = 4) {
         board = '';
     }
 }
-chessBoard(6,6);
-console.log('---------best answer----------')
-chessBoardBest(6,6);
 
 /*
 * O(n)
@@ -46,3 +43,8 @@ function chessBoardBest(w = 4, h = 4) {
 function isOdd(num) {
     return num % 2 == 0 ? true : false;
 }
+
+console.log('---------brute force answer----------')
+chessBoard(4,4);
+console.log('---------best answer----------')
+chessBoardBest(10,10);
